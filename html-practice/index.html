@@ -8,9 +8,9 @@
 
   <body>
     <div class="content">
-      <header class="header">
+      <header class="header clearfix">
         <h1 class="heading">📘 The Code Magazine</h1>
-        <nav>
+        <nav class="navigation">
           <a class="navigation-link" href="blog.html" target="_blank">Blog</a>
           <a class="navigation-link" href="#" target="_blank">Challenges</a>
           <a class="navigation-link" href="#" target="_blank">Flexbox</a>
@@ -18,7 +18,7 @@
         </nav>
       </header>
 
-      <article>
+      <article class="author-article">
         <header>
           <h2 class="title">
             The Basic Language of the Web: HTML
@@ -30,6 +30,7 @@
             width="50px"
             src="img/laura-jones.jpg"
             alt="Author image"
+            class="author-image"
           />
           <p class="author-title">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
@@ -120,47 +121,58 @@
           <h4 class="related-posts-title">Related Posts</h4>
           <ul>
             <li>
-              <img
-                height="75px"
-                width="75px"
-                src="img/related-1.jpg"
-                alt="Person programming"
-              />
-              <a class="navigation-link bold" href="#">
-                How to Learn Web Development
-              </a>
-              <p class="related-posts-author">By Jonas Schmedtmann</p>
+              <div class="related-posts-container">
+                <img
+                  height="75px"
+                  width="75px"
+                  src="img/related-1.jpg"
+                  alt="Person programming"
+                  class="related-posts-image"
+                />
+                <a class="navigation-link bold" href="#">
+                  How to Learn Web Development
+                </a>
+                <p class="related-posts-author">By Jonas Schmedtmann</p>
+              </div>
             </li>
             <li>
-              <img
-                height="75px"
-                width="75px"
-                src="img/related-2.jpg"
-                alt="Lightning"
-              />
-              <a class="navigation-link" href="#">
-                The Unknown Powers of CSS
-              </a>
-              <p class="related-posts-author">By Jim Dillon</p>
+              <div class="related-posts-container">
+                <img
+                  height="75px"
+                  width="75px"
+                  src="img/related-2.jpg"
+                  alt="Lightning"
+                  class="related-posts-image"
+                />
+                <a class="navigation-link" href="#">
+                  The Unknown Powers of CSS
+                </a>
+                <p class="related-posts-author">By Jim Dillon</p>
+              </div>
             </li>
             <li>
-              <img
-                height="75px"
-                width="75px"
-                src="img/related-3.jpg"
-                alt="JavaScript code on a screen"
-              />
-              <a class="navigation-link italic" href="#">
-                Why JavaScript is Awesome
-              </a>
+              <div class="related-posts-container">
+                <img
+                  height="75px"
+                  width="75px"
+                  src="img/related-3.jpg"
+                  alt="JavaScript code on a screen"
+                  class="related-posts-image"
+                />
+                <a class="navigation-link italic" href="#">
+                  Why JavaScript is Awesome
+                </a>
 
-              <p class="related-posts-author">By Matilda</p>
+                <p class="related-posts-author">By Matilda</p>
+              </div>
             </li>
           </ul>
         </div>
       </aside>
 
-      <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+      <footer class="clearfix">
+        Copyright &copy; 2027 by The Code Magazine.
+      </footer>
     </div>
   </body>
 </html>

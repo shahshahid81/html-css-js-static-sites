@@ -9,7 +9,7 @@ body {
 }
 
 .shop-item {
-  width: 825px;
+  width: 800px;
   margin: 5% auto;
   border: 4px solid black;
   position: relative;
@@ -35,26 +35,45 @@ body {
   padding: 15px;
 }
 
+.container {
+  width: 235px;
+  float: left;
+  margin-right: 2%;
+}
+
+.shopping-item-image {
+  width: 250px;
+}
+
+.shopping-item-container {
+  padding: 2%;
+}
+
 .shop-item-price {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  float: left;
 }
 
 .shop-item-free-shipping {
+  float: right;
   text-transform: uppercase;
   color: rgb(128, 128, 128);
   font-weight: bold;
   font-size: 0.8em;
-  padding-bottom: 2%;
+  padding: 3% 1.5% 2%;
 }
 
 .shop-item-description {
+  clear: both;
   margin: 1% auto;
+  padding: 3% 0;
 }
 
 .shop-item-more-information:link,
 .shop-item-more-information:visited {
   color: black;
   margin: 0 auto 3%;
+  padding-bottom: 5%;
   display: inline-block;
 }
 
@@ -64,10 +83,10 @@ body {
 }
 
 .shopping-item-color-list div {
-  min-width: 20px;
-  min-height: 20px;
+  min-width: 22px;
+  min-height: 22px;
   display: inline-block;
-  margin-right: 1%;
+  margin-right: 3%;
 }
 
 .shopping-item-color-list-black {
@@ -94,6 +113,10 @@ body {
   background-color: brown;
 }
 
+.shopping-item-products-container {
+  margin-top: 2%;
+}
+
 .shopping-item-product-details {
   text-transform: uppercase;
 }
@@ -114,7 +137,7 @@ body {
   color: white;
   text-transform: uppercase;
   font-size: 1.2em;
-  padding: 1%;
+  padding: 2%;
 }
 
 .shopping-item-add-to-cart:hover {
