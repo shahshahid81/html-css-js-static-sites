@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: sans-serif;
   color: #444;
   line-height: 1.5;
@@ -20,38 +19,33 @@ body {
 .header {
   background-color: #f7f7f7;
   margin-left: 2%;
-  margin-bottom: 3%;
-  padding: 2%;
+  padding: 1%;
   color: #1098ad;
-  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .heading {
   text-transform: uppercase;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding: 0.5%;
   color: inherit;
-  float: left;
 }
 
-.clearfix {
-  display: block;
-  content: "";
-  clear: both;
-}
-
-.navigation {
-  float: right;
-  width: 50%;
+.navigation-bar {
+  width: 28%;
+  margin-left: 2%;
 }
 
 .navigation-link:link,
 .navigation-link:visited {
+  display: inline-block;
   color: #1098ad;
-  margin-right: 1%;
+  margin-right: 2%;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.15em;
 }
 
 .navigation-link:hover,
@@ -60,10 +54,14 @@ body {
   text-decoration: underline;
 }
 
-.author-article {
-  float: left;
-  width: 750px;
-  margin-left: 1%;
+.article-container {
+  display: flex;
+  gap: 3%;
+  align-items: flex-start;
+}
+
+.main-article {
+  flex: 7;
 }
 
 .title {
@@ -85,14 +83,7 @@ body {
   padding: 0.5% 1%;
 }
 
-.author-image {
-  float: left;
-  margin-right: 1%;
-  margin-bottom: 2%;
-}
-
 .author-title {
-  float: left;
   font-style: italic;
   margin: 1% 0 2%;
   font-size: 1.2em;
@@ -142,9 +133,8 @@ body {
 }
 
 .related-posts {
-  float: right;
+  flex: 3;
   margin-top: 8%;
-  width: 350px;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
@@ -154,32 +144,25 @@ body {
   background-color: #f7f7f7;
 }
 
+.related-posts-list-item {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 2%;
+}
+
 .related-posts-title {
   text-align: center;
   justify-content: center;
   font-size: 1.3em;
   text-transform: uppercase;
-}
-
-.related-posts-image {
-  float: left;
-  margin-right: 1%;
+  margin-bottom: 2%;
 }
 
 .related-posts-author {
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 0.9em;
   margin-bottom: 3%;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.related-posts-container {
-  min-height: 100%;
+.related-posts-link {
+  font-size: 1em;
 }
