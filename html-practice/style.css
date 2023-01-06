@@ -14,6 +14,9 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 4%;
 }
 
 .header {
@@ -24,6 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-column: 1 / -1;
 }
 
 .heading {
@@ -52,16 +56,6 @@ body {
 .navigation-link:active {
   color: red;
   text-decoration: underline;
-}
-
-.article-container {
-  display: flex;
-  gap: 3%;
-  align-items: flex-start;
-}
-
-.main-article {
-  flex: 7;
 }
 
 .title {
@@ -133,8 +127,8 @@ body {
 }
 
 .related-posts {
-  flex: 3;
-  margin-top: 8%;
+  align-self: start;
+  margin-top: 15%;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
@@ -165,4 +159,8 @@ body {
 
 .related-posts-link {
   font-size: 1em;
+}
+
+.footer {
+  grid-column: 1 / -1;
 }
