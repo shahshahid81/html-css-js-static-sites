@@ -6,6 +6,7 @@
 
 body {
   background-color: #f8f9fa;
+  color: #343a40;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +28,7 @@ body {
   column-gap: 15px;
 
   background-color: #fff;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
   font-size: 24px;
 }
 
@@ -47,7 +48,7 @@ body {
 .icon {
   width: 24px;
   height: 24px;
-  stroke: #2f9e44;
+  stroke: #087f5b;
   stroke-width: 2;
 }
 
@@ -56,11 +57,13 @@ body {
   grid-column: 2 / -2;
   font-size: 16px;
   color: #000;
+  font-weight: 400;
 }
 
 .description-points {
   margin: 18px auto;
   color: #868e96;
+  line-height: 1.6;
 }
 
 .description-point {
@@ -68,6 +71,6 @@ body {
 }
 
 .accordion-active {
-  border-top: 5px solid #2f9e44;
-  color: #2f9e44;
+  border-top: 5px solid #087f5b;
+  color: #087f5b;
 }
