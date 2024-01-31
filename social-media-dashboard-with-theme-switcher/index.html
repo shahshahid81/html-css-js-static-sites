@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="heading-container">
+          <h1 class="heading">Social Media Dashboard</h1>
+          <p class="sub-heading">Total Followers: 23,004</p>
+        </div>
+        <div class="theme-switch">
+          <p class="theme-switch-label">Dark Mode</p>
+          <label for="theme-toggle" class="theme-switch-toggle-container">
+            <input id="theme-toggle" name="theme-toggle" type="checkbox" />
+            <span class="theme-switch-toggle-span"></span>
+          </label>
+        </div>
+      </header>
+      <section class="social-media-consumers">
+        <article class="social-media-consumer social-media-consumer-facebook">
+          <div class="social-media-username-container">
+            <img src="images/icon-facebook.svg" alt="Facebook Logo" />
+            <p class="social-media-username">@nathanf</p>
+          </div>
+          <p class="social-media-consumer-term-container">
+            <span class="social-media-consumer-count">1987</span>
+            <span class="social-media-consumer-term">Followers</span>
+          </p>
+          <div
+            class="social-media-consumer-change social-media-consumer-change-increment"
+          >
+            <img src="images/icon-up.svg" alt="Up Icon" />
+            <p>12 Today</p>
+          </div>
+        </article>
+        <article class="social-media-consumer social-media-consumer-twitter">
+          <div class="social-media-username-container">
+            <img src="images/icon-twitter.svg" alt="Twitter Logo" />
+            <p class="social-media-username">@nathanf</p>
+          </div>
+          <p class="social-media-consumer-term-container">
+            <span class="social-media-consumer-count">1044</span>
+            <span class="social-media-consumer-term">Followers</span>
+          </p>
+          <div
+            class="social-media-consumer-change social-media-consumer-change-increment"
+          >
+            <img src="images/icon-up.svg" alt="Up Icon" />
+            <p>99 Today</p>
+          </div>
+        </article>
+        <article class="social-media-consumer social-media-consumer-instagram">
+          <div class="social-media-username-container">
+            <img src="images/icon-instagram.svg" alt="Instagram Logo" />
+            <p class="social-media-username">@realnathanf</p>
+          </div>
+          <p class="social-media-consumer-term-container">
+            <span class="social-media-consumer-count">11k</span>
+            <span class="social-media-consumer-term">Followers</span>
+          </p>
+          <div
+            class="social-media-consumer-change social-media-consumer-change-increment"
+          >
+            <img src="images/icon-up.svg" alt="Up Icon" />
+            <p>1099 Today</p>
+          </div>
+        </article>
+        <article class="social-media-consumer social-media-consumer-youtube">
+          <div class="social-media-username-container">
+            <img src="images/icon-youtube.svg" alt="Youtube Logo" />
+            <p class="social-media-username">Nathan F.</p>
+          </div>
+          <p class="social-media-consumer-term-container">
+            <span class="social-media-consumer-count">8239</span>
+            <span class="social-media-consumer-term">Subscribers</span>
+          </p>
+          <div
+            class="social-media-consumer-change social-media-consumer-change-decrement"
+          >
+            <img src="images/icon-down.svg" alt="Down Icon" />
+            <p>144 Today</p>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="section-title">Overview - Today</h2>
+        <div class="social-media-consumers-statistics">
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Page Views</p>
+              <p class="social-media-consumer-statistic-count">87</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-facebook.svg"
+                alt="Facebook Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-increment"
+              >
+                <img src="images/icon-up.svg" alt="Up Icon" />
+                <p>3%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Likes</p>
+              <p class="social-media-consumer-statistic-count">52</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-facebook.svg"
+                alt="Facebook Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-decrement"
+              >
+                <img src="images/icon-down.svg" alt="Down Icon" />
+                <p>2%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Likes</p>
+              <p class="social-media-consumer-statistic-count">5462</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-instagram.svg"
+                alt="Instagram Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-increment"
+              >
+                <img src="images/icon-up.svg" alt="Up Icon" />
+                <p>2257%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Profile Views</p>
+              <p class="social-media-consumer-statistic-count">52k</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-instagram.svg"
+                alt="Instagram Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-increment"
+              >
+                <img src="images/icon-up.svg" alt="Up Icon" />
+                <p>1375%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Retweets</p>
+              <p class="social-media-consumer-statistic-count">117</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-twitter.svg"
+                alt="Twitter Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-increment"
+              >
+                <img src="images/icon-up.svg" alt="Up Icon" />
+                <p>303%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Likes</p>
+              <p class="social-media-consumer-statistic-count">507</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-twitter.svg"
+                alt="Twitter Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-increment"
+              >
+                <img src="images/icon-up.svg" alt="Up Icon" />
+                <p>553%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Likes</p>
+              <p class="social-media-consumer-statistic-count">107</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-youtube.svg"
+                alt="Youtube Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-decrement"
+              >
+                <img src="images/icon-down.svg" alt="Down Icon" />
+                <p>19%</p>
+              </div>
+            </div>
+          </article>
+          <article class="social-media-consumer-statistic">
+            <div class="statistics-count">
+              <p class="social-media-consumer-statistic-type">Total Views</p>
+              <p class="social-media-consumer-statistic-count">1407</p>
+            </div>
+            <div class="count-change">
+              <img
+                class="social-media-consumer-statistic-icon"
+                src="images/icon-youtube.svg"
+                alt="Youtube Logo"
+              />
+              <div
+                class="social-media-consumer-statistic-change social-media-consumer-statistic-change-decrement"
+              >
+                <img src="images/icon-down.svg" alt="Down Icon" />
+                <p>12%</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        rel="noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://linkedin.com/in/shahshahid2123"
+        rel="noopener"
+        rel="noreferrer"
+        target="_blank"
+        >Shahid Shah</a
+      >.
+    </footer>
+  </body>
+</html>
