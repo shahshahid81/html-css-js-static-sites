@@ -1,0 +1,10 @@
+1. Mobile Design has Header first. Header has menu button, title, cart and profile.
+  Navigation should be hidden by default and only on click of the button, it should be visible and there should be option to close the Navigation menu as well.
+  this is applicable only for the mobile site.
+2. There is a list of images for products and button to show other products.
+  By Default, the first image should be shown and using javascript, the source of the image can be changed.
+  Add support for infinite scrolling by using mod operator to return to first element after checking the last image.
+3. There is description of product and price.
+4. There is quantity add remove and add to card button.
+    Add to card button should add the data on the cart. Also, the quantity should be more than zero to pick user quantity else 1 will be considered.
+    Cart should be shown as empty if there are no elements else the card should have one element.
