@@ -13,21 +13,25 @@
   <script src="script.js"></script>
 </head>
 
-<body>
+<body id="body">
   <main>
-    <header class="header">
-      <div class="icon-container">
-        <div class="bar bar-1"></div>
-        <div class="bar bar-2"></div>
-        <div class="bar bar-3"></div>
+    <header id="header" class="header">
+      <div id="open-mobile-navigation" class="icon-container">
+        <div class="open-bar"></div>
+        <div class="open-bar"></div>
+        <div class="open-bar"></div>
       </div>
-      <nav class="navigation">
+      <nav id="navigation" class="navigation">
+        <div id="close-mobile-navigation" class="icon-container">
+          <div class="close-bar close-bar-1"></div>
+          <div class="close-bar close-bar-2"></div>
+        </div>
         <ul>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li class="navigation-items">Collections</li>
+          <li class="navigation-items">Men</li>
+          <li class="navigation-items">Women</li>
+          <li class="navigation-items">About</li>
+          <li class="navigation-items">Contact</li>
         </ul>
       </nav>
       <img src="images/logo.svg" alt="Company Logo" />

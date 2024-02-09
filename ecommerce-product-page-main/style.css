@@ -16,6 +16,21 @@
   padding: 0;
 }
 
+.body::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
 html {
   font-family: 'Kumbh Sans', sans-serif;
 }
@@ -31,20 +46,68 @@ img {
   padding: 1.5em;
 }
 
+.header-active {
+  position: relative;
+}
+
 .icon-container {
   cursor: pointer;
   padding-top: 0.23em;
+  position: relative;
 }
 
-.bar {
+.open-bar {
   width: 20px;
   height: 3px;
   margin: 3px 0;
   background-color: gray;
 }
 
+.close-bar {
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: gray;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.close-bar-1 {
+  transform: rotate(45deg);
+}
+
+.close-bar-2 {
+  transform: rotate(315deg);
+}
+
 .navigation {
   display: none;
+}
+
+.navigation > ul {
+  padding-top: 6em;
+  padding-left: 0.25em;
+}
+
+.navigation-active {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+}
+
+.navigation-items {
+  list-style: none;
+  font-size: 1.15rem;
+  color: var(--black);
+  font-weight: 600;
+  padding: 0.5em 1em;
+  letter-spacing: 0.025em;
 }
 
 .header-options {
