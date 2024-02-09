@@ -1,6 +1,7 @@
 :root {
   --primary: hsl(26, 100%, 55%);
   --primary-light: hsl(25, 100%, 94%);
+  --primary-text: hsl(26, 93%, 65%);
   --very-dark-blue: hsl(220, 13%, 13%);
   --dark-grayish-blue: hsl(219, 9%, 45%);
   --grayish-blue: hsl(220, 14%, 75%);
@@ -27,7 +28,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.75em;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .icon-container {
@@ -55,7 +56,7 @@ img {
 }
 
 .customer-profile-avatar {
-  max-width: 35%;
+  max-width: 45%;
 }
 
 .product-images {
@@ -63,7 +64,7 @@ img {
 }
 
 .product-image {
-  height: 30vh;
+  height: 32vh;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -93,11 +94,95 @@ img {
   translate: 1px 1px;
 }
 
-footer {
-  font-size: 11px;
-  text-align: center;
+.product-section {
+  padding: 1.6em;
 }
 
-footer a {
-  color: hsl(228, 45%, 44%);
+.company-title {
+  font-size: 0.8rem;
+  color: var(--primary-text);
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  padding-bottom: 0.5em;
+}
+
+.product-description {
+  font-size: 0.85rem;
+  letter-spacing: 0.025em;
+  color: var(--dark-grayish-blue);
+  line-height: 1.5;
+  padding-bottom: 2em;
+}
+
+.pricing-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em 1em 0;
+}
+
+.discounted-pricing-details {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.discounted-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.discount-percentage {
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+}
+
+.original-price {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.quantity-control {
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.75em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.quantity {
+  font-weight: 600;
+}
+
+.add-to-cart-button {
+  background-color: var(--primary);
+  color: var(--white);
+  width: 100%;
+  padding: 1em;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  gap: 0.6em;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+}
+
+.add-to-cart-button > svg {
+  transform: scale(0.8);
 }

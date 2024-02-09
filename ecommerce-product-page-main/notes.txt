@@ -8,3 +8,7 @@
 4. There is quantity add remove and add to card button.
     Add to card button should add the data on the cart. Also, the quantity should be more than zero to pick user quantity else 1 will be considered.
     Cart should be shown as empty if there are no elements else the card should have one element.
+
+Todo:
+Remove all footer
+Complete mobile design
