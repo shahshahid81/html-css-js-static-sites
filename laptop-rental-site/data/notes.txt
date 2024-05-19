@@ -1,0 +1,10 @@
+Color Generator
+    Primary: A bright blue (#00BFFF) - Represents approachability and a modern feel.
+    Secondary: White (#FFFFFF) - Creates a clean and open feel.
+    Accent: Orange (#FF7F00) - A vibrant accent that highlights calls to action and signifies affordability.
+
+Get Stats on 
+    Number of laptops rented
+    Current customers / companies where laptops are rented 
+Images of laptops
+Shop Address
